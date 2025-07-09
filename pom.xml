@@ -3,11 +3,11 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
          http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-
-    <groupId>org.example</groupId>
+    <groupId>local</groupId>
     <artifactId>data_sorter</artifactId>
     <version>1.0</version>
     <build>
+        <finalName>data_sorter_util</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -25,12 +25,13 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>org.example.DataSorter</mainClass>
+                            <mainClass>DataSorter</mainClass>
                         </manifest>
                     </archive>
                     <descriptorRefs>
                         <descriptorRef>jar-with-dependencies</descriptorRef>
                     </descriptorRefs>
+                    <appendAssemblyId>false</appendAssemblyId>
                 </configuration>
                 <executions>
                     <execution>

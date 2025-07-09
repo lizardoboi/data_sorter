@@ -52,6 +52,7 @@ public class DataSorter {
                 case "-f": showFullStats = true;
                 break;
                 case "-s": showShortStats = true;
+                break;
                 default: inputFiles.add(args[i]);
             }
         }
