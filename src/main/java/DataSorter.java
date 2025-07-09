@@ -99,7 +99,6 @@ public class DataSorter {
             System.err.println("ошибка записи: " + e.getMessage());
         }
 
-        // Вывод статистики
         if (showFullStats || showShortStats) {
             printStats("Integers", intStats, true, showFullStats);
             printStats("Floats", floatStats, true, showFullStats);
